@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:200px;
+            width :150px;
+            position: relative;
+            background-color: blue;
+            color: #888888;
+            text-align: center;
+            transition: 4s;
+            margin: 40px;
+        }
+        #TranslateDiv:Hover{
+            
+            transform: translate(100px ,150px);
+            -o-transition-duratio: 13s;
+        }
+        #RotateDiv:Hover{
+            
+            transform: rotate(90deg);
+           
+        }
+        #rotate3dDiv:Hover{
+           
+            transform: rotateY(150deg);
+           
+        }
+        #SkewDiv:Hover{
+            
+            transform: skew(15deg, 15deg);
+           
+        }
+        #ScaleDiv:Hover{
+           
+            transform: scale(2) translate(-100%, -100%);
+           
+        }
+        #OpacityDiv:Hover{
+            opacity: 0.5;
+        }
+       #RgbadDiv:hover{
+        background-color: chocolate;
+       } 
+       #BoxShadowDiv:hover{
+         box-shadow: 10px 10px 8px #888888;
+       }
+       #TextShadowDiv:hover{
+        text-shadow: 2px 2px 8px #FF0000;
+       }
+       #BorderRadiusDiv:hover{
+        border-radius: 50% #888888;
+       }
+       #OverflowDiv:hover{
+        overflow: scroll;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div id="TranslateDiv">Translate</div><hr/>
+    <div id="RotateDiv">Rotate</div><hr/>
+    <div id="rotate3dDiv">Rotate3d</div><hr/>
+    <hr/>
+    <div id="SkewDiv">skew</div><hr/>
+
+    <div id="ScaleDiv">Scale</div><hr/>
+    <div id="OpacityDiv"> oPacity</div><hr/>
+    <div id="RgbadDiv">RGb</div><hr/>
+    <div id="BoxShadowDiv">Box Shadow</div><hr/>
+    <div id="TextShadowDiv">text Shadow</div><hr/>
+    <div id="BorderRadiusDiv">BorderRadius</div><hr/>
+    <div id="OverflowDiv">Overflow</div><hr/>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>video positioning html</title>
+
+    <style>
+        				.fullscreen_bg 
+				{
+					position:fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow:hidden;
+					z-index:-1;
+					background-size:cover;
+				}
+
+				.fullscreen_bg_video 
+				{
+					position:fixed;
+					width: auto;
+                    text-align: center;
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+                    z-index: -1;
+				}
+				h2{
+					background-color:rgb(114, 178, 218);
+					color:#ffffff;
+				}
+    </style>
+</head>
+<body>
+    <div class="fullscreen_bg">
+        <video  src ="video.mp4"
+        autoplay loop muted class = "fullscreen_bg_video" ></video>
+    </div>
+     
+
+    <h2> hello students </h2>
+    <h2> hello students </h2>
+    <h2> hello students </h2>
+    <h2> hello students </h2>
+    <h2> hello students </h2>
+    <h2> hello students </h2>
+</body>
+</html>
