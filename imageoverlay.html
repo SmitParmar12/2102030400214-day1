@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <style>
+            
+            .container:hover{
+                position: relative;
+                width: 300px;
+            }
+            
+        .image{
+            display: block;
+            width: 300px;
+            height: 400px;
+            transition: 1s;
+        }
+
+        .text{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .container:hover .overlay{
+            opacity: 1;
+        } 
+
+        .container:hover .image{
+            transform: rotate(360deg);
+        }
+
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background-color: rgba(39, 34, 34, 0.7);    
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h2>Image Overlay Effect</h2>
+    <div class="container">
+    
+    <img src="/download.jpeg" alt="Image" class="image" >
+
+    <div class="overlay">
+        <div class="text">Image Overlay Effect</div>
+    </div>
+    </div>
+</body>
+</html>
