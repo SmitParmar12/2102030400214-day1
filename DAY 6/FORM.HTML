@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+	<title>WEB FORMS</title>
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style>
+       *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 15px;
+            margin: 10px ;
+            border:solid rgb(9, 5, 5) ;
+            border-style: double;
+            outline: 10px;
+            background-color: #59376a;
+        }
+
+        div{
+            background-color: #f8b4b4;
+            padding: 5px 40px 15px 10px;
+            }
+
+        fieldset{
+            border: 1px solid;
+            border-radius: 10px;
+            }
+
+    input[type="text"],
+    input[type="address"],
+    select,
+    input[type="email"],
+    input[type="number"]
+    ,textarea{
+        width: 100%;
+        margin: 10px 10px;
+        border: 1px solid black;
+        padding: 10px 20px 15px 20px;
+        background-color: #15202B;  
+        color: aliceblue;
+    }
+
+    .heading{
+        text-align: center;
+        color: #000000; 
+
+    }
+
+    img{
+        margin-left: 30px;
+    }
+
+    input[type="submit"]{
+        padding: 10px 50px 10px 50px;
+        border-radius: 10px;
+        background-color: #6ac2ca;
+        color: black;
+        cursor: pointer;
+    }
+    h2{
+        text-align: center;
+    }
+
+    img{
+        margin-top: 10px;
+        height: 500px;
+        padding-right: 200px;
+    }
+    head{
+        height: 50px;
+            
+    }     
+
+</style>
+
+
+
+</head>
+
+<body>
+
+	<form>
+		<div>
+            <div id="head">
+                <img  src="asta.jpeg" alt="">
+                <hr>
+		    <h1 class="heading">STUDENT INFORMATION</h1>
+            </div>
+
+            <hr>
+			<p>Name:<input type="text" name="name" id=""></p>
+
+            <p>Enroll No.<input type="number" name="" id="" required maxlength="10" ></p>
+
+			<Fieldset>
+			<legend>Gender:</legend>
+				<p> 
+				Male <i class='fas fa-male'></i> <input type="radio" name="gender" id="">
+				Female <input type="radio" name="gender" id="">
+			    </p>
+			</Fieldset>
+
+			<p>Address:<textarea name="Address" id="" cols="30" rows="10" placeholder="ENTER YOUR ADDRESS"></textarea></p>
+
+            <p>Mobile No. <input type="number" name="" id="" required maxlength="10"></p>
+
+			<p>Email:<input type="email" name="email" id="" placeholder="abc@xyz.com" required ></p>
+			<hr>
+
+
+            <input type="submit" value="Submit">
+		</div>
+		</form>
+	</body> 
+</html>
