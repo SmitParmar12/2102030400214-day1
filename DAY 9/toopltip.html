@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background-color:aquamarine;
+        color: black ;
+    }
+    .o{
+        background-color: blueviolet;
+        color: aliceblue;
+        font-size: larger;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3>Tooltip Example:</h3>
+<hr>
+
+<div class="o" >Hover on the picture to see tooltip</div><br>
+
+  <ul class="list-inline">
+    
+        <a href="#" data-toggle="tooltip" data-placement="top" title="EXAMPLE OF TOOLTIP"><img src="img.png" alt="" height="100px"></a>
+
+  </ul>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
