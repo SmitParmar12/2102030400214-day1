@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* overflow: hidden; */
+        }
+
+        h2 {
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .container {
+            height: 600px;
+            background-color: rgb(126, 164, 234);
+        }
+
+        button {
+            margin: 3px;
+        }
+
+        #img {
+            display: grid;
+            justify-content: center;
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+
+    <h2>USE OF JavaScript</h2>
+
+    <div class="container">
+
+        <fieldset>
+            <legend>TAP ON BUTTON TO VOTE FOR FEV ANIME.</legend>
+            <ol>
+                <li><button
+                        onclick="document.getElementById('myImage').src='https://media.giphy.com/media/dvsQt2qh45tVl6YipK/giphy.gif'"style="background-color: darkred;">ONE PIECE</button>
+                </li>
+                <li><button
+                        onclick="document.getElementById('myImage').src='https://media1.tenor.com/images/5d04ad53d32d452c3e79bfa8816ce113/tenor.gif?itemid=19007088'" style="background-color: chocolate;"><i
+                            class="fa fa-hand-paper-o"
+                            onclick="document.getElementById('myImage').src='https://media.giphy.com/media/dvsQt2qh45tVl6YipK/giphy.gif'"></i>
+                        NARUTO</button></li>
+                <li><button
+                        onclick="document.getElementById('myImage').src='https://i.makeagif.com/media/9-07-2015/4O1tRC.gif'"style="background-color:purple;><i
+                            class="fa-thin fa-broom"></i>JUJUSU KAISEN</button></li>
+                <li><button
+                        onclick="document.getElementById('myImage').src='https://media.tenor.com/WV6_pwkmCuIAAAAC/vote-obama.gif'"style="background-color:green><i
+                            class="fa fa-window-close" aria-hidden="true"></i> DEMON SLAYER</button></li>
+            </ol>
+        </fieldset>
+
+        <hr>
+        <div id="img">
+            <img id="myImage" src="https://i0.wp.com/dailytrojan.com/wp-content/uploads/2018/09/DT-VoteAnim2.gif"
+                style="height:300px">
+        </div>
+    </div>
+</body>
+
+</html>
