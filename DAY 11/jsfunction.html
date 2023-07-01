@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(152, 240, 210);
+        font-family: "Josefin Sans", sans-serif;
+        }
+
+
+        h1{
+            color: rgb(6, 43, 31);
+            color: black;
+            text-align: center;
+        }
+        .box{
+            display: grid;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        input[number]{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <H1 style="background-color: crimson;">ENTER YOUR AGE TO CHECK ELIGIBILITY OF VOTING:</H1>
+
+    <div class="box">
+     <p>Enter your Age:</p>   
+    <input type="number" id="age" value="18" >
+    <br><br>
+
+    <button onclick="fun()">CHECK</button>
+    <p id="demo"></p>
+    </div>
+    
+    <script>
+        function fun(){
+            let v;
+            let age= document.getElementById("age").value;
+
+            if(age>=18){
+                v="OLD ENOUGH"
+            }else{
+                v="TOO YOUNG"
+            }
+
+            document.getElementById("demo").innerHTML="<hr>" + v + " FOR VOTING"; 
+        }
+    </script>
+</body>
+</html>
